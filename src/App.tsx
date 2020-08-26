@@ -13,6 +13,7 @@ import {
 
 import Home from './pages/Home';
 import './App.css';
+import 'antd/dist/antd.css';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -27,7 +28,7 @@ const App: FC = () => {
           left: 0,
         }}
       >
-        <div className="logo" />
+        <div className="site-logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
           <Menu.Item key="1" icon={<UserOutlined />}>
             nav 1
@@ -67,7 +68,7 @@ const App: FC = () => {
             <Home />
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>SwampHacks</Footer>
+        <Footer style={{ textAlign: 'center' }}>Footer</Footer>
       </Layout>
     </Layout>
   );
